@@ -1,4 +1,4 @@
-# Coding Assignment
+# Simple API Server
 The goal of this assignment is to build a simple HTTP service (with the appropriate unit tests) with two endpoints:
 
 ### POST /auth
@@ -44,7 +44,7 @@ We don't mind if you use whatever external libraries you like as long as they ar
 ### Estimation
 You will see an open issue "Call for estimation". Please estimate by writing a comment when you think the task will be ready before you start. We don't set any hard deadlines.
 
-### Wai's Notes
+### Notes
 How to run:
 - Tun the command go run main.go
 - The port is 8080
