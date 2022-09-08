@@ -1,5 +1,4 @@
 # Simple API Server
-The goal of this assignment is to build a simple HTTP service (with the appropriate unit tests) with two endpoints:
 
 ### POST /auth
 
@@ -27,23 +26,6 @@ For example:
 
 The response should be the **SHA256 hash of the sum of all numbers in the document**. It should return the appropriate error status code if the JWT token or the JSON payload are not valid.
 
-## Technical details
-
-## Requirements
-The only strict requirement we pose is that the app is written in **Go** using Go modules. We recommend the use of Go patterns wherever meaningful of course, and be prepared to show and explain them when presenting the solution. 
-
-### Project Setup
-Please setup the application to be build in a standard Go way or else provide a `start.sh` script.
-
-## Bonus (optional)
-A Dockerfile to build and run the service
-
-### External Libraries
-We don't mind if you use whatever external libraries you like as long as they are with a non-restrictive for commercial use license.
-
-### Estimation
-You will see an open issue "Call for estimation". Please estimate by writing a comment when you think the task will be ready before you start. We don't set any hard deadlines.
-
 ### Notes
 How to run:
 - Tun the command go run main.go
@@ -59,9 +41,6 @@ How to run:
     "data7": [],
     "data8": {}
 }
-
-Time spent: 
-- 2 days. I spent a little longer on this test to cover best practices, flexible mocking, high test coverage on logic etc and also to remind myself of how I would do things...Hopefully not too over engineered
 
 Packages:
 
@@ -87,5 +66,3 @@ Points:
 - used route versioning i.e. using v1 at the moment and can add v2 but still have v1 remaining if a consumer is not ready to use v2
 - use golangci-lint to enforce go standards
 
-
-if you have any improvements or something doesn't work please let me know!
