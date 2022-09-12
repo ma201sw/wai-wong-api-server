@@ -6,9 +6,9 @@ Accepts JSON input in the format:
 
 `{"username": "<user name>", "password": "<user password>"}`
 
-and returns JWT OAUTH 2/OIDC token with the username as a subject. The username and the password don't have to be verified, but should not accept empty strings. The JWT token should expire in one hour.
+and returns JWT OAUTH 2/OIDC token with the username as a subject. The username and the password is not verified, but should not accept empty strings. The JWT token will expire in one hour.
 
-It should return appropriate error status code if the JSON payload is not valid, or the username and password are not valid (are empty)
+It will return an error code when JSON payload is not valid, or the username and password is not valid (are empty)
 
 
 ### POST /sum
@@ -28,7 +28,7 @@ The response should be the **SHA256 hash of the sum of all numbers in the docume
 
 ### Notes
 How to run:
-- Tun the command go run main.go
+- Run the command go run main.go
 - The port is 8080
 - The API localhost:8080/sumapi/v1/auth generates a token
 - The API localhost:8080/sumapi/v1/sum takes in a bearer token with a json body and finds the sum of the numbers. Use this as a test for the json: body:{
