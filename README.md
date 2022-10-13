@@ -47,7 +47,7 @@ Packages:
 1. sumapi: sum API and routes
 2. tokenhelper: generates and verifies tokens
 3. jsonprovider: takes in unmarshalled json as a map[string]interface{}, finds all floats and then populates the float64 slice pointer
-4. golib: leverages interfaces for 3rd party APIs which can be mocked out(look at mock.go). There maybe a better way to manage this by putting each library in their own package or some other way. Also not every 3rd party API needs to be mocked out, achieving 100% test coverage may not be necessary and it can add a little complexity but I have done some 3rd party API mocking as an example
+4. golib: leverages interfaces for 3rd party APIs which can be mocked out(look at mock.go). There maybe a better way to manage this like putting each library in their own packagey. Also not every 3rd party API needs to be mocked out, achieving 100% test coverage may not be necessary and it can add a little complexity but I have done some 3rd party API mocking as an example
 5. common: API error handling and typed errors
 6. constant: viper names and some default config values
 
